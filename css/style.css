@@ -38,16 +38,36 @@
     height: 70vh;
     overflow: hidden;
     border-radius: 20px;
+    position: relative;
 }
 
 .hidden {
     display: none;
 }
 
+.title {
+    color: white;
+    position: absolute;
+    bottom: 24%;
+    right: 5%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: white;
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
+    font-size: 30px;
+    text-align: end;
+}
+
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(60%);
 }
 
 .button-next {
