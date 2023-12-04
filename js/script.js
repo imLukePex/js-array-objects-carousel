@@ -27,7 +27,7 @@ const images = [
     { 
         image: 'img/02.webp', 
         title: 'Ratchet & Clank: Rift Apart', 
-        text: 'Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.', 
+        text: 'Go dimension-hopping with Ratchet and Clank as they take on an evil emperor <br> from another reality.', 
     }, 
     
     { 
@@ -39,7 +39,7 @@ const images = [
     { 
         image: 'img/04.webp', 
         title: 'Stray', 
-        text: 'Lost, injured and alone, a stray cat must untangle an ancient mystery to escape a long-forgotten city', 
+        text: 'Lost, injured and alone, a stray cat must untangle an ancient mystery to escape <br> a long-forgotten city', 
     }, 
     
     { 
@@ -61,25 +61,25 @@ const slider =
         </div>
 
         <div class="item">
-            <img src="${images[1].image}" alt="Immagine SpiderMan">
+            <img src="${images[1].image}" alt="Immagine Ratchet & Clank">
             <div class="title">${images[1].title}</div>
             <div class="subtitle">${images[1].text}</div>
         </div>
 
         <div class="item">
-            <img src="${images[2].image}" alt="Immagine SpiderMan">
+            <img src="${images[2].image}" alt="Immagine Fortnite">
             <div class="title">${images[2].title}</div>
             <div class="subtitle">${images[2].text}</div>
         </div>
 
         <div class="item">
-            <img src="${images[3].image}" alt="Immagine SpiderMan">
+            <img src="${images[3].image}" alt="Immagine Stray">
             <div class="title">${images[3].title}</div>
             <div class="subtitle">${images[3].text}</div>
         </div>
 
         <div class="item">
-            <img src="${images[4].image}" alt="Immagine SpiderMan">
+            <img src="${images[4].image}" alt="Immagine Marvel's Avengers">
             <div class="title">${images[4].title}</div>
             <div class="subtitle">${images[4].text}</div>
         </div>
@@ -97,10 +97,11 @@ const slider =
 
 divContainer.innerHTML += slider;
 
-
+// Definizione costante items
 const items = document.getElementsByClassName('item');
 console.log(items);
 
+// Elemento con classe active
 let activeItem = 0;
 
 // Dichiarazione Arrow Up
